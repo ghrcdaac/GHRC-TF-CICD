@@ -1,6 +1,5 @@
-FROM python:3.7
-LABEL maintainer="am0089@uah.edu" \
-     author="Abdelhak Marouane"
+FROM python:3.10
+
 # Never prompts the user for choices on installation/configuration of packages
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM linux
@@ -27,7 +26,7 @@ WORKDIR $HOME/workstation
 
 
 
-# Adding dummy build.sh that needs to be overreten 
+# Adding dummy build.sh that needs to be overwritten
 COPY entrypoint.sh $HOME/entrypoint.sh 
 ENTRYPOINT [ "/bin/bash", "/home/bamboo/entrypoint.sh"]
 #CMD [ "/bin/bash", "/home/bamboo/entrypoint.sh"]
