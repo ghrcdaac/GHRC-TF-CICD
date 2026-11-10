@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Installing node 22
-curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
 apt install -y nodejs
 npm install -g npm
 
