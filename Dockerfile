@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.12
 
 # Never prompts the user for choices on installation/configuration of packages
 ENV DEBIAN_FRONTEND noninteractive

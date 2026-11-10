@@ -1,7 +1,7 @@
 #! /bin/bash
 
-# Installing node 18
-curl -sL https://deb.nodesource.com/setup_18.x | bash -
+# Installing node 22
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 apt install -y nodejs
 npm install -g npm
 
